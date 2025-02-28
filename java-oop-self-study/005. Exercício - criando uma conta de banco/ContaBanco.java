@@ -7,11 +7,11 @@ public class ContaBanco {
 	
 	// Construtor de ContaBanco
 	public ContaBanco(int numConta, String dono) {
-		this.numConta = numConta;
-		this.tipo = "Indefinido";
-		this.dono = dono;
-		this.saldo = 0;
-		this.status = false;
+		this.setNumConta(numConta);
+		this.setTipo("Indefinido");
+		this.setDono(dono);
+		this.setSaldo(0);
+		this.setStatus(false);
 	}
 	
 	// Métodos específicos de ContaBanco
@@ -41,7 +41,7 @@ public class ContaBanco {
 	}
 	
 	public void depositar(float deposito) {
-		if(this.getStatus() == false) {
+		if(!this.getStatus()) {
 			System.out.println("Abra sua conta para realizar um depósito.");
 			return;
 		}
@@ -50,7 +50,7 @@ public class ContaBanco {
 	}
 	
 	public void sacar(float saque) {
-		if(this.getStatus() == false) {
+		if(!this.getStatus()) {
 			System.out.println("Abra sua conta para realizar um saque.");
 			return;
 		}
@@ -68,7 +68,7 @@ public class ContaBanco {
 		
 		mensalidade = this.getTipo() == "CC" ? 12 : 20;
 		
-		if(this.getStatus() == false) {
+		if(!this.getStatus()) {
 			System.out.println("Abra sua conta para pagar a mensalidade.");
 			return;
 		}
