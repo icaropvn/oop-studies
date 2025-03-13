@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController"
+      spacing="10" alignment="CENTER">
+   <children>
+	<Label fx:id="lblMensagem" layoutX="59.0" layoutY="60.0" text="Aqui a mensagem vai aparecer!" textAlignment="CENTER">
+		<font>
+			<Font name="Inter Regular" size="20.0" />
+		</font>
+	</Label>
+      <Button fx:id="btnOlaMundo" layoutX="123.0" layoutY="112.0" mnemonicParsing="false" onAction="#clicouBotao" prefHeight="35.0" prefWidth="155.0" text="Clique em mim!">
+         <font>
+            <Font name="Inter Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
