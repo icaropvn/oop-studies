@@ -18,6 +18,7 @@ public class Chefe extends Empregado {
 	}
 	
 	// métodos específicos
+	@Override
 	public double calcularSalario() {
 		return salarioMensal;
 	}
