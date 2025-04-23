@@ -39,6 +39,7 @@ public class Comissionado extends Empregado{
 
 	
 	// métodos específicos
+	@Override
 	public double calcularSalario(){
 		return salarioBase + comissao*quantidade;
 	}
