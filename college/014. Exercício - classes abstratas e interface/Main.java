@@ -15,7 +15,7 @@ public class Main {
          * 1. Cria a coleção (capacidade 50) e alguns objetos de teste
          * -----------------------------------------------------------------
          */
-        Colecao colecao = new ColecaoVetor();
+        Colecao colecao = new ColecaoVetor(10);
 
         Professor prof1 = new Professor(
                 "Engenharia da Computação",
